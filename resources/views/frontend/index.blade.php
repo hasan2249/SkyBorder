@@ -511,10 +511,10 @@
 
 <!-- START SERVICES -->
     <section class="section bg-services" id="page2">
-        <div class="bg-overlay bg-black opacity-4"></div>
+        <!-- <div class="bg-overlay bg-black opacity-4"></div>
         <div class="container h-100">
         <div class="row h-100">
-            <div class="offset-md-6 col-md-6 my-auto">
+            <div class="offset-md-6 col-md-6 my-auto"> -->
                 <div id="services_slider" class="owl-carousel owl-theme">
 
                     <!-- Item 1 -->
@@ -550,10 +550,10 @@
                         <p data-aos="fade-left" class="mb-5 per-slide text-white wow fadeInLeft">@lang('section1.slid3.description')</p>
                     </div>
 
-                </div>
+                <!-- </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 <!-- END SERVICES -->
 
