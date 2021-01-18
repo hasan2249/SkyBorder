@@ -74,7 +74,7 @@ class PlanController extends Controller
                     $path .= Storage::putFileAs(
                         'public/images',  $file, $file->getClientOriginalName()
                     );
-                    $path .= " " ;
+                    $path .= "   " ;
                 }
             }
         }
@@ -143,7 +143,7 @@ class PlanController extends Controller
                     'public/images', $image, $image->getClientOriginalName()
                 );
 
-                $path .= " " ;
+                $path .= "   " ;
              }
             }
         }

@@ -22,7 +22,7 @@ class Plans extends Migration
             $table->text('content_en');
             $table->integer('price');
             $table->boolean('status')->default(1);
-            $table->string('img');
+            $table->text('img');
             $table->timestamps();
             $table->unsignedInteger('service_id');
             $table->foreign('service_id')

@@ -50,6 +50,10 @@
         <a href="{{route('frontend.index')}}"><img src="{{asset('images/main-logo.png')}}"  width="70" ></a>
     <div>
 
+   <div class="container">
+         <img class="" src="{{asset('storage/'. substr($service->img, '7'))}}" alt="">
+    </div>
+
 <div class="description">
         @langrtl
             <h3>{!!$service->title_ar!!} </h3>
@@ -62,21 +66,22 @@
 
 <div class="container">
     @foreach($service->plans as $ser_plan)
+    <?php
+    $arr = explode("   ", $ser_plan->img, 2);
+    $first = $arr[0];
+    ?>
   <div class="card">
       @langrtl
-      <h1>{{$ser_plan->title_ar}}</h1>
-    <div class="price"><h3>$ {{$ser_plan->price}} </h3></div>
+      <h1 class="big-text">{{$ser_plan->title_ar}}</h1>
     <div class="content_plan">
-        {!!$ser_plan->content_ar!!}
+        <img class="service_cycle_image" width="100%" src="{{asset('storage/'. substr($first, '7'))}}" alt="">
     </div> 
     @else  
-    <h1>{{$ser_plan->title_en}}</h1>
-    <div class="price"><h3>$ {{$ser_plan->price}} </h3></div>
+    <h1 class="big-text">{{$ser_plan->title_en}}</h1>
     <div class="content_plan">
-        {!!$ser_plan->content_en!!}
+        <img class="service_cycle_image" width="100%" src="{{asset('storage/'. substr($first, '7'))}}" alt="">
     </div> 
     @endlangrtl
-    <span>... </span>
 <a href="{{route('plan.desc',['id' => $ser_plan->id])}}">@lang('section1.more_details')</a>
   </div>
   @endforeach

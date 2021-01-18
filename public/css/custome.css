@@ -87,6 +87,7 @@ body {
     flex-direction: column;
     flex: 1;
     margin-right: 20px;
+    margin-bottom: 10px;
     background: #fff;
     border: lighten(#6c748b, 45%) 4px solid;
     text-align: center;
@@ -182,11 +183,6 @@ h2 {
     padding: 3px 5px 15px 5px;
 }
 
-.price {
-    width: 100%;
-    background: #3e5aad;
-}
-
 h3 {
     font-size: 2em;
     font-weight: 700;
@@ -200,9 +196,7 @@ h3 span {
 }
 
 .container .content_plan {
-    padding: 13px;
-    height: 100px;
-    overflow: hidden;
+    width: 100%;
 }
 
 /* Gallery css  */
@@ -233,10 +227,10 @@ h3 span {
     margin: auto;
 }
 .byebye {
-    opacity: 0;
+    /* opacity: 0; */
 }
 .byebye:hover {
-    transform: scale(0.2) !important;
+    /* transform: scale(0.2) !important; */
 }
 .gallery {
     display: grid;
@@ -408,4 +402,18 @@ a:active,
 a:hover,
 a {
     text-decoration: none;
+}
+
+.service_cycle_image {
+    background-size: cover;
+    height: 300px;
+}
+
+.big-text {
+    font-size: x-large;
+    color: #3e5aad;
+}
+
+.container img {
+    max-width: 100%;
 }

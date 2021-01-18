@@ -24,11 +24,9 @@
 
 <div class="container">
 
-  <h1>Masonry Gallery</h1>
-
     <div class="gallery" id="gallery">
         <?php 
-            $images_path = explode(" ", $plan->img);
+            $images_path = explode("   ", $plan->img);
         ?>
         @foreach($images_path as $image_path)
             <div class="gallery-item">
