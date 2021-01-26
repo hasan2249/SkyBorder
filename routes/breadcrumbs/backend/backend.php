@@ -11,6 +11,7 @@ require __DIR__.'/blog-categories/blog-categories.php';
 require __DIR__.'/blog-tags/blog-tags.php';
 require __DIR__.'/pages/page.php';
 require __DIR__.'/services/service.php';
+require __DIR__.'/our_works/our_work.php';
 require __DIR__.'/faqs/faq.php';
 require __DIR__.'/email-templates/email-template.php';
 require __DIR__.'/auth/permission.php';

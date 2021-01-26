@@ -1,9 +1,9 @@
 @extends('backend.layouts.app')
 
-@section('title', app_name() . ' | ' . 'Services Management')
+@section('title', app_name() . ' | ' . 'Our Works')
 
 @section('breadcrumb-links')
-@include('backend.services.includes.breadcrumb-links')
+@include('backend.our_works.includes.breadcrumb-links')
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-sm-5">
                 <h4 class="card-title mb-0">
-                    Services Management <small class="text-muted">Services list</small>
+                    Our Works <small class="text-muted">list</small>
                 </h4>
             </div>
             <!--col-->
@@ -22,12 +22,11 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="table-responsive">
-                    <table id="services-table" class="table" data-ajax_url="{{ route("admin.services.get") }}">
+                    <table id="our_works-table" class="table" data-ajax_url="{{ route("admin.our_works.get") }}">
                         <thead>
                             <tr>
                                 <th>Arabic Tilte</th>
                                 <th>English Tilte</th>
-                                <th data-orderable="false">Price</th>
                                 <th>Created at</th>
                                 <th>Actions</th>
                             </tr>
@@ -50,7 +49,7 @@
 @section('pagescript')
 <script>
     FTX.Utils.documentReady(function() {
-        FTX.Services.list.init();
+        FTX.Our_works.list.init();
     });
 </script>
 @endsection

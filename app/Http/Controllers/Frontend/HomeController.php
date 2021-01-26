@@ -21,7 +21,7 @@ class HomeController extends Controller
         $our_works = new Our_work();
         $plans = new Plan();
 
-        $index_parameters = ["services" => $sers->getAllServices(),"Our_works" => $our_works->getAllOurWorks(), 
+        $index_parameters = ["services" => $sers->getAllServices(),"our_works" => $our_works->getAllOurWorks(), 
                              "plans" => $plans->getAllPlans()];
 
         return view('frontend.index', $index_parameters);

@@ -38,6 +38,15 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link {{
+                        active_class(Route::is('admin/our_works'))
+                    }}" href="{{ route('admin.our_works.index') }}">
+                        <i class="nav-icon fas fa-file"></i>
+                       Our works
+                    </a>
+                </li>
+
             <!-- End -->
 
                 <li class="nav-title">

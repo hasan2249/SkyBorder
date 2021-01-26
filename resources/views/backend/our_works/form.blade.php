@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-sm-5">
             <h4 class="card-title mb-0">
-                Services Management
-                <small class="text-muted">{{ (isset($page)) ? 'Edit service' : 'Create service'}}</small>
+                Our Works
+                <small class="text-muted">{{ (isset($page)) ? 'Edit works' : 'Create new work'}}</small>
             </h4>
         </div>
         <!--col-->
@@ -15,7 +15,7 @@
     <div class="row mt-4 mb-4">
         <div class="col">
             <div class="form-group row">
-                {{ Form::label('title_ar', "اسم الخدمة (بالعربية)", ['class' => 'col-md-2 from-control-label required']) }}
+                {{ Form::label('title_ar', "تسمية المشروع (بالعربية)", ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
                     {{ Form::text('title_ar', null, ['class' => 'form-control', 'placeholder' => "", 'required' => 'required']) }}
@@ -25,7 +25,7 @@
             <!--form-group-->
 
             <div class="form-group row">
-                {{ Form::label('title_en', "Service name (English)", ['class' => 'col-md-2 from-control-label required']) }}
+                {{ Form::label('title_en', "Project name (English)", ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
                     {{ Form::text('title_en', null, ['class' => 'form-control', 'placeholder' => "", 'required' => 'required']) }}
@@ -35,7 +35,7 @@
             <!--form-group-->
 
             <div class="form-group row">
-                {{ Form::label('content_ar', "وصف الخدمة (بالعربية)", ['class' => 'col-md-2 from-control-label required']) }}
+                {{ Form::label('content_ar', "وصف المشروع (بالعربية)", ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
                     {{ Form::textarea('content_ar', null, ['class' => 'form-control', 'placeholder' => ""]) }}
@@ -54,19 +54,9 @@
             </div>
             <!--form-group-->
 
-            <div class="form-group row">
-                {{ Form::label('price', "price (السعر)", ['class' => 'col-md-2 from-control-label required']) }}
-
-                <div class="col-md-10">
-                    {{ Form::text('price', null, ['class' => 'form-control', 'placeholder' => ""]) }}
-                </div>
-                <!--col-->
-            </div>
-            <!--form-group-->
-
 
             <div class="form-group row">
-                {{ Form::label('img', "اختر صورة", ['class' => 'col-md-2 from-control-label required']) }}
+                {{ Form::label('img', "اختر صور", ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
                     {{ Form::file('img', null, ['class' => 'form-control', 'placeholder' => ""]) }}
@@ -99,7 +89,7 @@
 @section('pagescript')
 <script type="text/javascript">
     FTX.Utils.documentReady(function() {
-        FTX.Services.edit.init("{{ config('locale.languages.' . app()->getLocale())[1] }}");
+        FTX.Our_works.edit.init("{{ config('locale.languages.' . app()->getLocale())[1] }}");
     });
 </script>
 @stop
