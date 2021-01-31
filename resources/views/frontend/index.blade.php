@@ -54,10 +54,13 @@
                         <a class="nav-link link" href="#page2">@lang('section1.about_us')</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link" href="#page3">@lang('section1.services')</a>
+                        <a class="nav-link link" href="#page3">@lang('section1.our_work')</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link" href="#page4">@lang('section1.contact_us')</a>
+                        <a class="nav-link link" href="#page4">@lang('section1.services')</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page5">@lang('section1.contact_us')</a>
                     </li>
                     @auth
                         @can('view backend')
@@ -192,36 +195,6 @@
                          data-start="1000" data-splitin="none" data-splitout="none"
                          style="z-index:3; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">@lang('section1.slid1.with_us')
                     </div>
-                    <!-- <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-                         data-fontsize="['22','22','18','18']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
-                         data-width="['none','none','none','none']" data-type="text"
-                         data-textalign="['center','center','center','center']"
-                         data-beforeafter="before"
-                         data-transform_idle="o:1;"
-                         data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1500" data-splitin="none" data-splitout="none"
-                         style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Open Sans', sans-serif;text-transform:capitalize"><p>@lang('section1.slid1.description')</p>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-                         data-fontsize="['22','22','18','18']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
-                         data-width="['none','none','none','none']" data-type="text"
-                         data-textalign="['center','center','center','center']"
-                         data-beforeafter="after"
-                         data-transform_idle="o:1;"
-                         data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1500" data-splitin="none" data-splitout="none"
-                         style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Open Sans', sans-serif;text-transform:capitalize">@lang('section1.slid1.description')
-                    </div> -->
                     <div class="tp-caption tp-resizeme"
                          id="slide-24-layer-129" data-x="['center','center','center','center']"
                          data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']"
@@ -319,36 +292,6 @@
                          data-start="1000" data-splitin="none" data-splitout="none"
                          style="z-index:3; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">@lang('section1.slid2.with_us')
                     </div>
-                    <!-- <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-                         data-fontsize="['22','22','18','18']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
-                         data-width="['none','none','none','none']" data-type="text"
-                         data-textalign="['center','center','center','center']"
-                         data-beforeafter="before"
-                         data-transform_idle="o:1;"
-                         data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1500" data-splitin="none" data-splitout="none"
-                         style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Open Sans', sans-serif;text-transform:capitalize">@lang('section1.slid2.description')
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-                         data-fontsize="['22','22','18','18']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
-                         data-width="['none','none','none','none']" data-type="text"
-                         data-textalign="['center','center','center','center']"
-                         data-beforeafter="after"
-                         data-transform_idle="o:1;"
-                         data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1500" data-splitin="none" data-splitout="none"
-                         style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Open Sans', sans-serif;text-transform:capitalize">@lang('section1.slid2.description')
-                    </div> -->
                     <div class="tp-caption tp-resizeme"
                          id="slide-24-layer-130" data-x="['center','center','center','center']"
                          data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']"
@@ -458,37 +401,6 @@
                          style="z-index:3; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">@lang('section1.slid3.with_us')
                     </div>
 
-                    <!-- <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-                         data-fontsize="['22','22','18','18']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
-                         data-width="['none','none','none','none']" data-type="text"
-                         data-textalign="['center','center','center','center']"
-                         data-beforeafter="before"
-                         data-transform_idle="o:1;"
-                         data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1500" data-splitin="none" data-splitout="none"
-                         style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Open Sans', sans-serif;text-transform:capitalize">@lang('section1.slid3.description')
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-                         data-fontsize="['22','22','18','18']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
-                         data-width="['none','none','none','none']" data-type="text"
-                         data-textalign="['center','center','center','center']"
-                         data-beforeafter="after"
-                         data-transform_idle="o:1;"
-                         data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1500" data-splitin="none" data-splitout="none"
-                         style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Open Sans', sans-serif;text-transform:capitalize">@lang('section1.slid3.description')
-                    </div> -->
-
                     <div class="tp-caption tp-resizeme"
                          id="slide-24-layer-128" data-x="['center','center','center','center']"
                          data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']"
@@ -511,8 +423,8 @@
 
 <!-- START SERVICES -->
     <section class="section bg-services" id="page2">
-        <!-- <div class="bg-overlay bg-black opacity-4"></div>
-        <div class="container h-100">
+        <div class="bg-overlay bg-black opacity-4"></div>
+        <!-- <div class="container h-100">
         <div class="row h-100">
             <div class="offset-md-6 col-md-6 my-auto"> -->
                 <div id="services_slider" class="owl-carousel owl-theme">
@@ -552,13 +464,60 @@
 
                 <!-- </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
 </section>
 <!-- END SERVICES -->
 
+<!-- START TEAM -->
+<section class="section bg-team" id="page3">
+    <div class="bg-overlay bg-black opacity-4"></div>
+    <div class="container h-100">
+        <!-- <div class="row h-100"> -->
+            <!-- <div class="col-md-6 my-auto"> -->
+                <div id="testimonial-quote"  class="owl-carousel">
+                    <!-- Item 1 -->
+                    @foreach($our_works as $key => $our_work)
+                    <?php
+                            $arr = explode("   ", $our_work->img);
+                            $first = $arr[0];
+                    ?>
+                    <div class="item text-center ">
+                        <div class="testimonial-quote whitecolor" style="margin-top:134px;margin-bottom:50px;">
+                            <div class="team-img mb-4" style="margin:auto;"><img src="{{asset('storage/'. substr($first, '7'))}}" alt="img"></div>
+                            @langrtl
+                            <h1 class="font-weight-light main-title mb-3 alt-font" style="margin:10px">{!!$our_work->title_ar!!}</h1>
+                            <!-- <div class="mb-3 text-center  testimonial-line wow fadeInleft"></div> -->
+                            <!-- <div class="team-description mb-1 mb-md-5"><p class="m-0">{!!$our_work->content_ar!!}</p></div> -->
+                                 @else
+                                 <h1 class="font-weight-light main-title mb-3 alt-font" style="margin:10px">{!!$our_work->title_en!!}</h1>
+                            <!-- <div class="mb-3 testimonial-line wow fadeInleft"></div> -->
+                            <!-- <div class="team-description mb-1 mb-md-5"><p class="m-0">{!!$our_work->content_en!!}</p></div> -->
+                                @endlangrtl
+                                <a  href="{{route('our_work.desc' , ['id' => $our_work->id])}}"  class=" btn btn-large btn-rounded btn-blue color-white ">@lang('section1.more_details')</a>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <!-- Owl Dots -->
+                <div id="owl-thumbs" class="owl-dots" style="margin-top:20px;">
+                @foreach($our_works as $our_work)
+                    <?php
+                            $arr = explode("   ", $our_work->img);
+                            $first = $arr[0];
+                    ?>
+                    <button class="owl-dot active link"><img src="{{asset('storage/'. substr($first, '7'))}}"  alt="img"></button>
+                @endforeach
+                </div>
+                <div class="team-item d-none"></div>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
+</section>
+<!-- END TEAM -->
+
 <!-- START PORTFOLIO -->
-<section class="section portfolio-sec" id="page3">
+<section class="section portfolio-sec" id="page4">
     <div id="content-scroll">
         <h2 class="d-none">services</h2>
         <!-- Showcase Holder -->
@@ -577,7 +536,7 @@
                                 @endlangrtl  
                                     <div class="img-mask">
                                         <div class="section-image" data-src="{{asset('storage/'. substr($service->img, '7'))}}"></div>
-                                        <a style="z-index: 1; position: absolute; bottom: 22%; right: 45%;" href="{{route('service.desc' , ['id' => $service->id])}}" class=" btn btn-large btn-rounded btn-blue color-white ">More Details</a>
+                                        <a style="z-index: 1; position: absolute; bottom: 22%; right: 45%;" href="{{route('service.desc' , ['id' => $service->id])}}" class=" btn btn-large btn-rounded btn-blue color-white ">@lang('section1.more_details')</a>
                                     </div>
                                     <a class="showcase-link-project" data-type="page-transition" href="{{asset('storage/'. substr($service->img, '7'))}}"></a>
                                 </div>
@@ -595,10 +554,10 @@
                 <div class="showcase-pagination"></div>
                 <div class="caption-border left"></div>
                 <div class="caption-border right"></div>
-                <div class="arrows-wrap ">
-                    <div class="prev-wrap animated-wrap"><div class="swiper-button-prev swiper-button-white parallax-element animated-element"></div></div>
-                    <div class="next-wrap animated-wrap"><i class="fab fa-sort-asc" aria-hidden="true"></i></div>
-                </div>
+                <!-- <div class="arrows-wrap ">
+                    <div class="prev-wrap animated-wrap swiper-button-prev">up</div>
+                    <div class="next-wrap animated-wrap swiper-button-next">down</div>
+                </div> -->
             </div>
         </div>
         <!-- Showcase Holder -->
@@ -614,27 +573,19 @@
 </section>
 <!-- END PORTFOLIO -->
 
+
 <!-- START CONTACT -->
-<section id="page4" class="section bg-contact bg-dark position-relative" >
+<section id="page5" class="section bg-contact bg-dark position-relative" >
     <div class="bg-overlay bg-black opacity-2"></div>
     <div class="bg-overlay bg-black2 opacity-9"></div>
     <div class="container full-screen center-block">
         <div class="contact-body">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                        <h5> @lang('section1.give_message') </h5>
-                        <div  class="contact-line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
+            <div class="row" style="margin-bottom: 20px;">
                 <div class="col-md-12 col-sm-12 contact-form-center wow fadeInUp" data-wow-delay="400ms">
-
                     <div class="col-sm-12 p-0" id="result"></div>
-
                     <div class="company-contact-form">
-                        <form class="contact-form-outer contact-form" id="contact-form-data" onsubmit="return false;">
+                        <!-- encription for maiilto:info@skyborder.com -->
+                        <form action="&#109;&#65;&#73;&#76;&#116;&#79;&#58;&#105;&#110;&#102;&#111;&#64;&#115;&#107;&#121;&#98;&#111;&#114;&#100;&#101;&#114;&#46;&#99;&#111;&#109;" method="post" enctype="text/plain" class="contact-form-outer contact-form" id="contact-form-data">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 md max-width">
                                     <div class="contact-form-textfield pb-4">
@@ -643,17 +594,7 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6 max-width">
                                     <div class="contact-form-textfield pb-4">
-                                        <input type="email" placeholder="@lang('section1.email')" class="form-control link" required="" id="email" name="userEmail">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 max-width">
-                                    <div class="contact-form-textfield pb-4">
-                                        <input type="tel" placeholder="@lang('section1.phone')" class="form-control link" id="phone" name="userPhone">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 max-width">
-                                    <div class="contact-form-textfield pb-4">
-                                        <input type="text" placeholder="@lang('section1.subject')" class="form-control link" id="subject" name="userSubject">
+                                        <input type="text" placeholder="@lang('section1.email')" class="form-control link" required="" id="email" name="userEmail">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -662,15 +603,27 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 pt-xs-25px text-center">
-                                    <button type="submit" class="btn btn-blue btn-large btn-rounded text-uppercase contact_btn" id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b class="font-weight-normal">@lang('section1.send')</b>
+                                    <button type="submit" class="btn btn-blue btn-large btn-rounded text-uppercase contact_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b class="font-weight-normal">@lang('section1.send')</b>
                                     </button>
                                 </div>
-                            </div>
+                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                        <h1 style="font-size: 20px; color:white; margin:10px"> @lang('section1.company_site') </h1>
+                    </div>
+                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                        <!-- <a href="mailto:info@skyborder-sa.com">info@skyborder-sa.com</a> -->
+                        <a href="&#109;&#65;&#73;&#76;&#116;&#79;&#58;&#105;&#110;&#102;&#111;&#64;&#115;&#107;&#121;&#98;&#111;&#114;&#100;&#101;&#114;&#46;&#99;&#111;&#109;">info@skyborder-sa.com</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="http://maroof.sa/Business/GetStamp?bid=172140" style=" width: auto; height: 280px; overflow-y:hidden; margin-right:-15%;" frameborder="0" seamless='seamless' scrollable="no"></iframe>                
+         </div>
     </div>
 </section>
 <!-- END CONTACT -->

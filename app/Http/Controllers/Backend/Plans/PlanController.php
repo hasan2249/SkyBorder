@@ -36,8 +36,7 @@ class PlanController extends Controller
      * @return \App\Http\Responses\ViewResponse
      */
     public function index(Request $request)
-    {
-        
+    {    
         return new ViewResponse('backend.plans.index');
     }
 
@@ -83,27 +82,6 @@ class PlanController extends Controller
 
         return new RedirectResponse(route('admin.plans.index'), ['flash_success' => __('alerts.backend.pages.created')]);
 
-        // Comment: For only one Image
-        // $path = "";
-        // if ($request->hasFile('img')) {
-
-        //     //  Let's do everything here
-        //     if ($request->file('img')->isValid()) {
-                
-        //         //
-        //         $validated = $request->validate([
-        //             'img' => 'mimes:jpeg,png,jpg|max:2048',
-        //         ]);
-
-        //         $path = Storage::putFileAs(
-        //             'public/images', $request->file('img'), $request->file('img')->getClientOriginalName()
-        //         );
-        //     }
-        // }
-        
-        // $this->repository->create($request->except(['_token', '_method']), $path);
-
-        // return new RedirectResponse(route('admin.plans.index'), ['flash_success' => __('alerts.backend.pages.created')]);
     }
 
     /**
@@ -151,25 +129,7 @@ class PlanController extends Controller
 
         return new RedirectResponse(route('admin.plans.index'), ['flash_success' => __('alerts.backend.pages.updated')]);
  
-        // $path = "";
-        // if ($request->hasFile('img')) {
-        //     //  Let's do everything here
-        //     if ($request->file('img')->isValid()) {
-                
-        //         //
-        //         $validated = $request->validate([
-        //             'img' => 'mimes:jpeg,png,jpg|max:2048',
-        //         ]);
-
-        //         $path = Storage::putFileAs(
-        //             'public/images', $request->file('img'), $request->file('img')->getClientOriginalName()
-        //         );
-        //     }
-        // }
-        // $this->repository->update($plan, $request->except(['_token', '_method']), $path);
-
-        // return new RedirectResponse(route('admin.plans.index'), ['flash_success' => __('alerts.backend.pages.updated')]);
-       }
+    }
 
 /**
      * @param \App\Models\Page $page

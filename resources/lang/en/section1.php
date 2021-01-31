@@ -26,11 +26,13 @@ return [
     'services' => 'Services',
     'more_details' => 'More Details',
     'company_name' => 'Sky Border',
-    'give_message' => 'Give a Message',
+    'company_site' => 'Sky Border Est. For e-marketing Riyadh - Moaensiah',
     'name' =>'Name',
     'email' => 'Email',
     'subject' => 'Subject',
     'phone' => 'Phone',
     'send'=> 'Send',
-    'message' => 'Message'
+    'message' => 'Message',
+    'our_work'=>'Our Works',
+    'more_details'=>'More details'
 ];

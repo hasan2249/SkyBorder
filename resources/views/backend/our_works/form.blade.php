@@ -59,7 +59,8 @@
                 {{ Form::label('img', "اختر صور", ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
-                    {{ Form::file('img', null, ['class' => 'form-control', 'placeholder' => ""]) }}
+                    <!-- {{ Form::file('img', null, ['class' => 'form-control', 'placeholder' => ""]) }} -->
+                    <input type="file" name="img[]" multiple/>
                 </div>
                 <!--col-->
             </div>

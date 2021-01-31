@@ -14,7 +14,7 @@
         <meta name="author" content="@yield('meta_author', 'top tech')">
 
         <!-- Favicon -->
-        <link href="https://megaone.acrothemes.com/creative-piling/images/favicon.ico" rel="icon">
+        <link href="images/main-logo.png" rel="icon">
         <!-- Bundle -->
         <link href="css/bundle.min.css" rel="stylesheet">
         <!-- Plugin Css -->
@@ -35,33 +35,33 @@
         <!-- Scripts -->
 
         <!-- JavaScript -->
-        <script src="{{asset('js/bundle.min.js')}}"></script>
+        <script src="{{asset('js/bundle.min.js')}}" defer ></script>
 
         <!-- Plugin Js -->
-        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
-        <script src="{{asset('js/swiper.min.js')}}"></script>
-        <script src="{{asset('js/jquery.appear.js')}}"></script>
-        <script src="{{asset('js/TweenMax.min.js')}}"></script>
-        <script src="{{asset('js/parallaxie.min.js')}}"></script>
+        <script src="{{asset('js/owl.carousel.min.js')}}" defer ></script>
+        <script src="{{asset('js/swiper.min.js')}}" defer ></script>
+        <script src="{{asset('js/jquery.appear.js')}}" defer ></script>
+        <script src="{{asset('js/TweenMax.min.js')}}" defer ></script>
+        <script src="{{asset('js/parallaxie.min.js')}}" defer ></script>
         <!-- REVOLUTION JS FILES -->
-        <script src="{{asset('js/jquery.themepunch.tools.min.js')}}"></script>
-        <script src="{{asset('js/jquery.themepunch.revolution.min.js')}}"></script>
+        <script src="{{asset('js/jquery.themepunch.tools.min.js')}}" defer ></script>
+        <script src="{{asset('js/jquery.themepunch.revolution.min.js')}}" defer ></script>
         <!-- SLIDER REVOLUTION EXTENSIONS -->
-        <script src="{{asset('js/extensions/revolution.extension.actions.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.carousel.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.kenburn.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.migration.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.navigation.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.parallax.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.slideanims.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.video.min.js')}}"></script>
-        <script src="{{asset('js/extensions/revolution.extension.beforeafter.min.js')}}"></script>
+        <script src="{{asset('js/extensions/revolution.extension.actions.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.carousel.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.kenburn.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.layeranimation.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.migration.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.navigation.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.parallax.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.slideanims.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.video.min.js')}}" defer ></script>
+        <script src="{{asset('js/extensions/revolution.extension.beforeafter.min.js')}}" defer ></script>
 
-        <script src="{{asset('js/jquery.pagepiling.min.js')}}"></script>
-        <script src="{{asset('js/swiper-thumbnail.js')}}"></script>
-        <script src="{{asset('js/contact_us.js')}}"></script>
-        <script src="{{asset('js/script.js')}}"></script>
+        <script src="{{asset('js/jquery.pagepiling.min.js')}}" defer ></script>
+        <script src="{{asset('js/swiper-thumbnail.js')}}" defer ></script>
+        <script src="{{asset('js/contact_us.js')}}" defer ></script>
+        <script src="{{asset('js/script.js')}}" defer ></script>
 
 
         @include('includes.partials.ga')

@@ -537,13 +537,13 @@ function Showcase() {
         var interleaveOffset = 0.4;
 
         var swiperOptions = {
-            direction: "vertical",
-            loop: false,
+            direction: "horizontal",
+            loop: true,
             grabCursor: true,
             resistance : true,
             resistanceRatio : 0,
             speed:1200,
-            autoplay: false,
+            autoplay: true,
             effect: "slide",
             mousewheel: false,
             pagination: {

@@ -823,9 +823,9 @@ a {
 ====================================== */
 
 .bg-services {
-    background: url(../images/3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(../images/3.jpg) center;
+    background-size: inherit;
+    background-repeat: repeat;
 }
 
 .services-item {
@@ -922,7 +922,7 @@ a {
 ====================================== */
 
 .bg-team {
-    background: url(../images/team-bg.jpg);
+    background: url(../images/team-bg.jpg) center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -959,6 +959,7 @@ a {
 h2,
 p {
     color: #ffffff;
+    font-size: 20px;
 }
 
 .testimonial-wrapp,
@@ -1647,12 +1648,32 @@ div[data-title="THE QUEEN"] {
 .contact-body {
     width: 100%;
     height: 500px;
+    /* padding-top: 88px; */
+}
+
+@media screen and (max-width: 1599px) {
+    iframe {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    iframe {
+        padding-top: 61px;
+        position: absolute;
+        top: 728px;
+        right: 40px;
+        margin-top: -78px;
+    }
 }
 
 .main-title {
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     text-align: center;
+    color: #24b6ce;
+    font-size: 25px;
+    font-weight: 700 !important;
 }
 
 .main-title h5 {

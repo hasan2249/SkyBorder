@@ -58,7 +58,7 @@ class Our_worksController extends Controller
     public function store(Request $request)
     {
         
-        $path = "";
+       $path = "";
         if ($request->hasFile('img')) {
 
             $files = $request->file('img');
@@ -68,6 +68,7 @@ class Our_worksController extends Controller
                         $validator = Validator::make($request->all(), [
                                 'img' => 'mimes:jpeg,png,jpg|max:2048',
                             ]);
+                    // $file->store('users/' . $this->user->id . '/messages');
                     $path .= Storage::putFileAs(
                         'public/images',  $file, $file->getClientOriginalName()
                     );
@@ -79,7 +80,6 @@ class Our_worksController extends Controller
         $this->repository->create($request->except(['_token', '_method']), $path);
 
         return new RedirectResponse(route('admin.our_works.index'), ['flash_success' => __('alerts.backend.pages.created')]);
-
         }
 
     /**
@@ -102,7 +102,7 @@ class Our_worksController extends Controller
      */
     public function update(Our_work $our_work, Request $request)
     {
-        $path = "";
+         $path = "";
         if ($request->hasFile('img')) {
             //  Let's do everything here
             $images = $request->file('img');
@@ -125,8 +125,7 @@ class Our_worksController extends Controller
         $this->repository->update($our_work, $request->except(['_token', '_method']), $path);
 
         return new RedirectResponse(route('admin.our_works.index'), ['flash_success' => __('alerts.backend.pages.updated')]);
- 
-       }
+    }
 
 /**
      * @param \App\Models\Page $page
@@ -142,7 +141,7 @@ class Our_worksController extends Controller
     }
 
 
-    public function showDescription(Request $request , $id)
+    public function showOur_worksDescription(Request $request , $id)
     {
         $our_work = Our_work::findOrFail($id);
         return view('frontend.our_workDescription')->with('our_work' , $our_work);
