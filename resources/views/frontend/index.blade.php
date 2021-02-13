@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('navs.general.home'))
+@section('title', 'Skyborder' . ' | ' . __('navs.general.home'))
 
 @section('content')
 <!-- START LOADER -->
@@ -535,7 +535,7 @@
                                 <div class="swiper-slide"  data-title="{{$service->title_en}}" data-subtitle="Service" data-number="{{++$key}}">
                                 @endlangrtl  
                                     <div class="img-mask">
-                                        <div class="section-image" data-src="{{asset('storage/'. substr($service->img, '7'))}}"></div>
+                                        <img class="section-image" src="{{asset('storage/'. substr($service->img, '7'))}}"></img>
                                         <a style="z-index: 1; position: absolute; bottom: 22%; right: 45%;" href="{{route('service.desc' , ['id' => $service->id])}}" class=" btn btn-large btn-rounded btn-blue color-white ">@lang('section1.more_details')</a>
                                     </div>
                                     <a class="showcase-link-project" data-type="page-transition" href="{{asset('storage/'. substr($service->img, '7'))}}"></a>
@@ -614,7 +614,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                        <h1 style="font-size: 20px; color:white; margin:10px"> @lang('section1.company_site') </h1>
+                        <h1 style="font-size: 20px; color:white; margin:10px">  @lang('section1.company_identity') </h1>
+                        <h1 style="font-size: 20px; color:white; margin:10px"> <i class="fa fa-map-marker" aria-hidden="true"></i> @lang('section1.company_location') </h1>
+                        <h1 style="font-size: 20px; color:white; margin:10px"> <i class="fa fa-phone" aria-hidden="true"></i> <span> </span>0966 50 808 3383 </h1>
                     </div>
                     <div class="main-title wow fadeIn" data-wow-delay="300ms">
                         <!-- <a href="mailto:info@skyborder-sa.com">info@skyborder-sa.com</a> -->
@@ -622,8 +624,13 @@
                     </div>
                 </div>
             </div>
-            <iframe src="http://maroof.sa/Business/GetStamp?bid=172140" style=" width: auto; height: 280px; overflow-y:hidden; margin-right:-15%;" frameborder="0" seamless='seamless' scrollable="no"></iframe>                
-         </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe src="http://maroof.sa/Business/GetStamp?bid=172140" style=" width: auto; height: 280px; overflow-y:hidden; margin-right:-15%;" frameborder="0" seamless='seamless' scrollable="no"></iframe>                
+                </div>
+            </div>
+            </div>
     </div>
 </section>
 <!-- END CONTACT -->

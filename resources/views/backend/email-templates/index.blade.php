@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.backend.access.email-templates.management'))
+@section('title', 'SkyBorder' . ' | ' . __('labels.backend.access.email-templates.management'))
 
 @section('breadcrumb-links')
 @include('backend.email-templates.includes.breadcrumb-links')

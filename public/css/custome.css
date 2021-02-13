@@ -99,6 +99,7 @@ body {
     animation: 1.5s cubic-bezier(0.53, 0.2, 0.54, 1.33) 0s 1 slidein;
     animation-fill-mode: forwards;
     border-radius: 20px;
+    min-width: 30%;
 }
 
 .card:last-of-type {
@@ -416,4 +417,10 @@ a {
 
 .container img {
     max-width: 100%;
+}
+
+.input,
+select,
+textarea {
+    margin: 0 0 5px 0;
 }

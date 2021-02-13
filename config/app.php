@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel '.app()->version().' Boilerplate'),
+    'name' => env('APP_NAME', 'Skyborder '.app()->version().' Boilerplate'),
 
     /*
     |--------------------------------------------------------------------------

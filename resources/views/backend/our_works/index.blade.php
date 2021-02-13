@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', app_name() . ' | ' . 'Our Works')
+@section('title', 'SkyBorder' . ' | ' . 'Our Works')
 
 @section('breadcrumb-links')
 @include('backend.our_works.includes.breadcrumb-links')

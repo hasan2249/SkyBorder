@@ -15,6 +15,7 @@
 
         <!-- Favicon -->
         <link href="https://megaone.acrothemes.com/creative-piling/images/favicon.ico" rel="icon">
+        <link href="{{asset('css/frontend.css')}}" rel="stylesheet">
         <link href="{{asset('css/custome.css')}}" rel="stylesheet">
     </head>
     <body>

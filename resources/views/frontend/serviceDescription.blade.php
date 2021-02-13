@@ -1,7 +1,7 @@
 
 @extends('frontend.layouts.service_plan')
 
-@section('title', app_name() . ' | ' .'Service Description')
+@section('title', 'SkyBorder' . ' | ' .$service->title_en)
 
 @section('content')
 
@@ -65,25 +65,27 @@
 </div>
 
 <div class="container">
+<!-- <div class="row h-100"> -->
     @foreach($service->plans as $ser_plan)
     <?php
     $arr = explode("   ", $ser_plan->img, 2);
     $first = $arr[0];
     ?>
-  <div class="card">
-      @langrtl
-      <h1 class="big-text">{{$ser_plan->title_ar}}</h1>
-    <div class="content_plan">
-        <img class="service_cycle_image" width="100%" src="{{asset('storage/'. substr($first, '7'))}}" alt="">
-    </div> 
-    @else  
-    <h1 class="big-text">{{$ser_plan->title_en}}</h1>
-    <div class="content_plan">
-        <img class="service_cycle_image" width="100%" src="{{asset('storage/'. substr($first, '7'))}}" alt="">
-    </div> 
-    @endlangrtl
-<a href="{{route('plan.desc',['id' => $ser_plan->id])}}">@lang('section1.more_details')</a>
-  </div>
+        <div class="card">
+                @langrtl
+                <h1 class="big-text">{{$ser_plan->title_ar}}</h1>
+                <div class="content_plan">
+                    <img class="service_cycle_image" width="100%" src="{{asset('storage/'. substr($first, '7'))}}" alt="">
+                </div> 
+                @else  
+                <h1 class="big-text">{{$ser_plan->title_en}}</h1>
+                <div class="content_plan">
+                    <img class="service_cycle_image" width="100%" src="{{asset('storage/'. substr($first, '7'))}}" alt="">
+                </div> 
+                @endlangrtl
+                <a href="{{route('plan.desc',['id' => $ser_plan->id])}}">@lang('section1.more_details')</a>
+        </div>
   @endforeach
+    <!-- </div> -->
 </div>
 @endsection

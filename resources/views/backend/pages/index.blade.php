@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.backend.access.pages.management'))
+@section('title', 'SkyBorder' . ' | ' . __('labels.backend.access.pages.management'))
 
 @section('breadcrumb-links')
 @include('backend.pages.includes.breadcrumb-links')

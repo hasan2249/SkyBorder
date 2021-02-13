@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', app_name() . ' | '. __('labels.backend.access.permissions.management'))
+@section('title', 'SkyBorder' . ' | '. __('labels.backend.access.permissions.management'))
 
 @section('breadcrumb-links')
 @include('backend.auth.permissions.includes.breadcrumb-links')

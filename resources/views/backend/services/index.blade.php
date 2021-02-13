@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', app_name() . ' | ' . 'Services Management')
+@section('title', 'SkyBorder' . ' | ' . 'Services Management')
 
 @section('breadcrumb-links')
 @include('backend.services.includes.breadcrumb-links')

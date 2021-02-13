@@ -1,7 +1,7 @@
 
 @extends('frontend.layouts.service_plan')
 
-@section('title', app_name() . ' | ' .'Our Work Description')
+@section('title', 'SkyBorder' . ' | ' . $our_work->content_en)
 
 @section('content')
 
